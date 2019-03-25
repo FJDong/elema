@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/rem.css">
 </head>
 <body>
+
+
     <!--------------头---------------->
     <div class="head">
         <div class="address">
@@ -360,11 +362,65 @@
             
         </ul>
     </div>
-
+    <!--------------弹幕---------------->
+    <div class="screen">
+        <div class="screen-boxs">
+            <p class="danmu"></p>
+        </div>
+    </div>
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script>
         
         $(document).ready(function(){
+            //获取十六进制颜色 
+        function randomColor1(){ 
+        var r = Math.floor(Math.random()*256); 
+        var g = Math.floor(Math.random()*256); 
+        var b = Math.floor(Math.random()*256); 
+        if(r < 16){ 
+            r = "0"+r.toString(16); 
+        }else{ 
+            r = r.toString(16); 
+        } 
+        if(g < 16){ 
+            g = "0"+g.toString(16); 
+        }else{ 
+            g = g.toString(16); 
+        } 
+        if(b < 16){ 
+            b = "0"+b.toString(16); 
+        }else{ 
+            b = b.toString(16); 
+        } 
+            return "#"+r+g+b; 
+        } 
+        // $("h3").css("color",randomColor1());
+            var arr = ["666666","卢本伟牛逼","可以的，兄弟","可以你MD东瓜皮。。。","打她MD棒棒糖","哎呦~~~这么难受的吗","难受啊~飞~",
+            "人在哪？人在哪？哪个方向？","这把游戏已经结束了","人心如路，越计较，越狭窄；越宽容，越宽阔."]
+            console.log(arr.length)
+            function danMu(){
+                for(var i= 0; i<arr.length;i++){
+                    var p = $(".danmu").eq(0).clone().appendTo(".screen-boxs");
+                    var wp = $(".danmu").width();
+                    var h = Math.random() * 20 + 'rem';
+                    var w = Math.random() * wp + 'rem';
+                    p.css({top:h,left:$(".screen").width()+$(".screen").width()*Math.random()})
+                    p.text(arr[i])
+
+                    p.css("color",randomColor1())
+                    p.animate({left:-$(".screen").width()*1.5+'px'},10000)
+
+                }
+            }
+            var danmu = setInterval(danMu,500)
+            var a = setTimeout(function(){
+                var deldanmu = setInterval(function(){
+                    $(".danmu").eq(0).remove();
+                },100)
+            },10000)
+            
+
+
             //菜单按钮
             $("#menu-btn-left").click(function(){
                 $("#menu-left").css("display","block");

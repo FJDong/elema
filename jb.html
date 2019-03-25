@@ -292,41 +292,68 @@
 				}
         }
     }
+	var index = 0;
+		var allBtn = $(".lunbo-btn button");
+		allBtn.eq(0).css("background","white");
+		var w = $(".box img").eq(0).width()
+        $(function(){
+            function left(){
+			$(".box").stop().animate({left:-w*index+'px'},500,function(){
+				allBtn.eq(index).click(function(){
+					index = $(this).index()
+					allBtn.css("background","rgba(0, 0, 0, 0.1)");
+					allBtn.eq(index).css("background","white");
+				})
+				allBtn.css("background","rgba(0, 0, 0, 0.1)");
+				allBtn.eq(index).css("background","white");
+					if(index == 3){
+						index = 0;
+						$(".box").css('left',-w*index+'px'); 
+						allBtn.eq(0).css("background","white"); 
+					}else{
+						index++;
+					}
+				});
+								
+			}
+			var t = setInterval(left,1000)
+
+		})
 </script>
 
 
 
     <!-- <script>
-        var index = 0;
-				var allBtn = $(".lunbo-btn button");
-				allBtn.eq(0).css("background","white");
-				var w = $(".box img").eq(0).width()
-        $(function(){
-            function left(){
-							$(".box").stop().animate({left:-w*index+'px'},500,function(){
-									allBtn.eq(index).click(function(){
-										index = $(this).index()
-										allBtn.css("background","rgba(0, 0, 0, 0.1)");
-										allBtn.eq(index).css("background","white");
-									})
-									allBtn.css("background","rgba(0, 0, 0, 0.1)");
-									allBtn.eq(index).css("background","white");
-							if(index == 3){
-                        index = 0;
-                        $(".box").css('left',-w*index+'px'); 
-												allBtn.eq(0).css("background","white"); 
-                    }else{
-                        index++;
-                    }
+    //     var index = 0;
+	// 			var allBtn = $(".lunbo-btn button");
+	// 			allBtn.eq(0).css("background","white");
+	// 			var w = $(".box img").eq(0).width()
+    //     $(function(){
+    //         function left(){
+	// 						$(".box").stop().animate({left:-w*index+'px'},500,function(){
+	// 								allBtn.eq(index).click(function(){
+	// 									index = $(this).index()
+	// 									allBtn.css("background","rgba(0, 0, 0, 0.1)");
+	// 									allBtn.eq(index).css("background","white");
+	// 								})
+	// 								allBtn.css("background","rgba(0, 0, 0, 0.1)");
+	// 								allBtn.eq(index).css("background","white");
+	// 						if(index == 3){
+    //                     index = 0;
+    //                     $(".box").css('left',-w*index+'px'); 
+	// 											allBtn.eq(0).css("background","white"); 
+    //                 }else{
+    //                     index++;
+    //                 }
                 
 									
 										
-                });
+    //             });
 								
-            }
-            var t = setInterval(left,1000)
+    //         }
+    //         var t = setInterval(left,1000)
 
-        })
-    </script> -->
+    //     })
+    // </script> -->
 </body>
 </html>
