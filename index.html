@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<title>饿了吗</title>
+	  <link rel="stylesheet" href="./css/index.css" media="screen and (max-width:750px)">
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <!-- <link rel="stylesheet" href="./css/index.css" > -->
+ </head>
+<body>
+	<div class="cont">
+		<img src="./img/elma-logo.png" alt="">
+		<form id="myForm" action="smsyzm.php" method="post">
+			<table class="a">
+				<label for="" class="number">
+					<input type="text" name="yzmtel" id="yzmtel" class="yzmtel" placeholder="手机号">
+					<input type="submit" value="获取验证码" class="submit" checked=""/>
+				</label>
+				
+				<input type="text" name="yzm" id="yzm" class="yzm" placeholder="验证码">
+				<p class="tip">新用户登录即自动注册,并表示已同意<a>《用户服务协议》</a></p>
+				<tr>
+					<td><a href="#" onclick="document.getElementById('myForm').submit();"></td>
+				</tr>
+				<a href="./shouye.html"><input type="button" class="login" value="登录"></a>
+				<p class="about">关于我们</p>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

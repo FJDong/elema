@@ -1,0 +1,324 @@
+
+/*-------------头-------------*/
+.head{
+    width: 100%;
+    background-color: #0089ff; 
+}
+.address{
+    height: 3rem;
+    line-height: 3rem;
+    padding: 1rem 1.1rem 0 1.1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+.address>p>i{
+    margin-right: 0.8rem;
+}
+.address>button{
+    margin-left: 1.4rem;
+    background-color: #0089ff;
+    border: none;
+    color: white;
+}
+/*-------------搜索-------------*/
+.search{
+    padding: 0.75rem 1.1rem 0.8rem 1.1rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0rem;
+    background-color: #0089ff;
+    z-index: 999;
+}
+.search>p{
+    width: 100%;
+    height: 3.25rem;
+    line-height: 3.25rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    background-color: #ffffff;
+    color: #999;
+    text-align: center;
+}
+.search>p>i{
+    margin-right: 0.5rem;
+}
+/*-------------菜单-------------*/
+.menu{
+    width: 100%;
+    margin-bottom: 0.65rem;
+}
+/*-------------菜单左栏-------------*/
+.menu-left{
+    width: 100%;
+    text-align: center;
+    color: #666;
+}
+.menu-left-clm1,.menu-left-clm2{
+    display: flex;
+    justify-content: space-around;
+}
+/*-------------菜单单个盒子-------------*/
+.menu-box{
+    padding: 0.7rem 0;
+    cursor: pointer;
+}
+.menu-box img{
+    width: 4.2rem;
+    height: 4.2rem;
+    padding-bottom:0.65rem; 
+}
+.menu-box p{
+    font-size: 1.1rem;
+    line-height: 0.5rem;
+}
+/*-------------菜单右栏-------------*/
+.menu-right{
+    width: 100%;
+    text-align: center;
+    color: #666;
+    display: none;
+}
+.menu-right-clm1,.menu-right-clm2{
+    display: flex;
+    justify-content: space-around;
+}
+.menu-btn{
+    text-align: center;
+}
+.menu-btn>button{
+    width: 0.9rem;
+    height: 0.15rem;
+    border: none;
+}
+/*-------------logo-------------*/
+.logo{
+    padding: 0.3rem 1rem 0.25rem 1rem;
+}
+.logo-cont{
+    padding: 0.9rem 0 0.6rem 1.4rem;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-box-font{
+    font-size: 1.15rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem; 
+    color: #777;
+}
+.logo-box-go{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #af8260;
+}
+.logo-img{
+    width: 13rem;
+    height: 8.5rem;
+    margin-right: 1.3rem;
+}
+/*-------------超级会员-------------*/
+.super{
+    padding: 0 1rem;
+}
+.super-box{
+    padding: 0 1.2rem;
+    background-color: #f3dda0;
+    border-radius: 0.2rem;
+    line-height: 3.75rem;
+    color: #644f1b;
+    display: flex;
+    justify-content: space-between;
+}
+.super-box-left{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.super-box-left>img{
+    width: 1.6rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 1rem;
+}
+.super-box-leftfont{
+    text-indent: 2.1em;
+    color: #644f1b;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.super-box-left>span{
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+.super-box-leftfont2{  
+    font-weight: 600;
+}
+.super-box-right{
+    display: flex;
+    justify-content: space-between;
+}
+.super-box-right>span{
+    color: #bd8f22;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+/*-------------轮播图-------------*/
+.lunbo{
+    padding: 0 1rem;
+    margin-top: 0.35rem; 
+}
+.lunbo-cont{
+    padding-top: 6.4rem;
+    height: 1rem;
+    padding-bottom: 0.8rem;
+    position: relative;
+    overflow: hidden;
+}
+.lunbo-photo{
+    width:400%;
+    height: 8.2rem;
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    z-index: -1;
+    transition: all 1s ease;
+}
+.lunbo-photo>img{
+    width:calc(100% / 4);
+    height: 100%;
+    float: left;
+}
+.lunbo-tit{
+    height: 1.6rem;
+    padding: 0 0.4rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.3rem;
+    color: #eee;
+    background: rgba(0, 0, 0, 0.5)
+}
+.lunbo-btn{
+    text-align: center;
+}
+.lunbo-btn>button{
+    width: 0.9rem;
+    height: 0.15rem;
+    border: none;
+}
+
+/*-------------推荐商家-------------*/
+.shop{
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 3.2rem;
+}
+.shop>p{
+    display: inline;
+    margin: 0 1rem;
+}
+.sort{
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 4.75rem;
+    z-index: 999;
+    background-color: white;
+}
+.store-shop{
+    padding: 1.2rem 0;
+    border: 1px solid #eeeeee;
+}
+.shop-top{
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.shop-top>img{
+    width: 6rem;
+    height: 6rem;
+}
+.top-righttit{
+    width: 100%;
+    /* text-align: left; */
+    padding-left: 1rem;
+    font-weight: 400;
+}
+.righttit-p1,.righttit-p3{
+    display: flex;
+    justify-content: space-between;
+}
+.righttit-p1>p:first-child{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.righttit-p1>p:first-child>span{
+    display: inline-block;
+    color: #6f3f15;
+    background-color: #ffe339;
+    font-size: 1rem;
+    margin-right: 0.4rem;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.2rem;;
+}
+.righttit-p2{
+    margin: 0.7rem 0 ;
+
+}
+.righttit-p2>i{
+    color: #ffb400;
+    
+}
+.righttit-gray{
+    color: #999;
+}
+.shop-dec{
+    padding: 1rem 1rem 0 8.5rem;
+}
+.shop-dec-p1>span:first-child{
+    display: inline-block;
+    padding: 0.1rem 0.15rem;
+    border: 1px solid #eeeeee;
+    margin-right: 1rem;
+}
+.shop-dec-p1>span:last-child{
+    color: #e8470b;
+    font-weight: 400;
+}
+.shop-span{
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    border-top: 1px dashed #f5f5f5;
+    margin-top: 1.2rem;
+    
+}
+.shop-dec-p2>span,.shop-dec-p3>span{
+    color: white;
+    background-color: #f1884f;
+    margin-right: 0.6rem;
+    padding: 0 0.2rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.shop-dec-p2,.shop-dec-p3{
+    line-height: 1.9rem;
+}
+.shop-dec-p3>span{
+    background-color: #70bc46;
+}
+.last{
+    margin-bottom: 5rem;
+}
+/*-------------菜单右栏-------------*/
+/*-------------菜单右栏-------------*/
+/*-------------菜单右栏-------------*/

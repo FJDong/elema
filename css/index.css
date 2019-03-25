@@ -1,0 +1,96 @@
+body,ul,li,p,h1,h2,h3,h4,h5,h6,button,input{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html{
+    font-size: 12px;
+}
+.cont{
+    width: 70%;
+    margin: 3.5rem auto;
+    
+}
+#myForm,.a{
+    width: 100%;
+    
+}
+.cont > img{
+    /* width: 27rem; */
+    display: block;
+    margin: 0 auto;
+}
+.number{
+    display: block;
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    margin-top: 1.3rem;
+}
+.yzmtel{
+    width: 100%;
+    height: 3.5rem;
+    text-indent: 1em;
+    border: 1px solid #dddddd;
+    color: #cccccc;
+    outline-color: #0089dc;
+}
+.submit{
+    height: 3.5rem;
+    padding-right: 0.7rem;
+    position: absolute;
+    right: 0;
+    top: 0.1rem;
+    border: none;
+    background-color: white;
+    border-radius: 0.3rem;
+    color: #cccccc;
+    outline:none;
+}
+.yzm{
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 1.4rem;
+    text-indent: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 0.3rem;
+    outline-color: #0089dc;
+}
+.tip{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #999;
+}
+.tip a{
+    color: #2395ff;
+}
+.login{
+    width: 100%;
+    height: 3.5rem;
+    background: #4cd96f;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    margin-top: 2.3rem;
+    outline: none;
+}
+.about{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #999;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #cccccc;
+  }
+  
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #cccccc;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #cccccc;
+  } 
+

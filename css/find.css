@@ -1,0 +1,198 @@
+body{
+    background-color: #f5f5f5;
+}
+/*-------------头-------------*/
+.head{
+    width: 100%;
+    height: 14.8rem;;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ededed;
+    text-indent: 1.6em;
+    background-color: white;
+}
+.oDiv{
+    position: relative;
+}
+.head h2{
+    line-height:5rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+.left-p1{
+    color: rgb(255, 153, 0);
+}
+.right-p1{
+    color: rgb(27, 169, 225);
+}
+.right-p2{
+    color: rgb(237, 102, 96);
+}
+.head h4{
+    color: #999;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 4rem;
+    font-weight: 400;
+    line-height: -2rem;
+}
+.head img{
+    position: absolute;
+    bottom: 0.8rem;
+    right: 1rem;
+}
+.head-left>img{
+    width: 7rem;
+}
+.head-left{
+    width: 50%;
+}
+.head-right{
+    width: 50%;
+    border-left: 1px solid #ededed;
+
+}
+.head-right-top{
+    height: 50%;
+    border-bottom: 1px solid #ededed;
+}
+.head-right-top>img{
+    width: 4rem;
+}
+.head-right-down{
+    height: 50%;
+}
+.head-right-down>img{
+    width: 4rem;
+}
+/*-------------内容-------------*/
+.cont{
+    border-top: 1px solid #ededed;
+    background-color: white;
+    text-align: center;
+    margin-top: 1.1rem;
+    padding-top: 1.4rem;
+}
+.cont>h2>i{
+    font-size: 2rem;
+    color: #f34646;
+}
+.cont>h6{
+    color: #999;
+    font-weight: 500;
+    padding-bottom: 0.9rem;
+}
+/*-------------cont-box-------------*/
+.cont-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.4rem;
+}
+.cont-label{
+    width: 46%;
+    height: 24.3rem;
+    border: 1px solid #ededed;
+    margin-bottom: 0.4rem;
+}
+.cont-label-img{
+    width: 100%;
+    height: 16rem;
+    background: url("../img/c4.jpeg") 100% 100% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.cont-label-img>.mark{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    line-height: 2rem;
+    text-align: center;
+    z-index: 9;
+}
+.cont-label-txt{
+    padding: 0 1rem;
+    text-align: left;
+}
+.cont-label-txt>h5{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.cont-label-txt1{
+    color: #666;
+}
+.cont-label-txt2{
+    color: #ff6000;
+}
+.cont-label-txt2>.money{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.cont-label-txt2>.quan{
+    border: 1px solid #ff6000;
+    margin-left: 0.3rem;
+    padding: 0 0.2rem;
+}
+.cont-label-txt>.line{
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin-top: 0.2rem;
+    border-top: 1px dashed #ededed;
+}
+
+.cont-label-txt3{
+   color: #999; 
+   line-height: 2.2rem;
+}
+.cont>p:last-child{
+    color: #999;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.6rem;
+}
+/*------------限时好礼--------------*/
+.lift{
+    padding-bottom: 6.5rem;
+}
+
+.lift-box{
+    width: 30%;
+    height: 17.2rem;
+    text-align: left;
+}
+.lift-bo{
+    padding-top: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+}
+.lift-box-img{
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    background: url("../img/d1.jpeg") 100% 100% no-repeat;
+    background-size: 100%;
+    margin-bottom: 0.5rem;
+}
+.lift-box-img>p{
+    color: white;
+    padding: 0.2rem;
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.lift-box-tit1{
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.lift-box-tit2{
+    color: #ff5339;
+}
+.lift-box-tit2>del{
+    color: #aaa;
+    font-weight: 100;
+    display: inline-block;
+    margin-left: 0.3rem;
+}

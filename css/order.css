@@ -1,0 +1,85 @@
+body{
+    background-color: #f5f5f5;
+}
+/*-------------box-------------*/
+
+.order{
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    height: 13.3rem;;
+    margin: 0.8rem 0;
+    background-color: white;
+}
+.order-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.order-left{
+    width: 5rem;
+    height: 4.5rem;
+    position: relative;
+}
+.order-left>img{
+    width: 3rem;
+    position: absolute;
+}
+.order-right{
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+}
+.order-right-tit{
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.order-right-tit>p:first-child{
+    font-size: 1.5rem;
+}
+.order-right-tit>p:last-child{
+    font-size: 1.1rem;
+}
+
+.order-right-time{
+    color: #999;
+}
+.order-line{
+    line-height: 4rem;
+    padding-left: 4.4rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ededed;
+}
+.order-line>p:first-child{
+    font-size: 1.2rem;
+}
+.order-line>p:last-child{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.share{
+    position: relative; 
+}
+.share>p{
+    color: #ff5339;
+    border: 1px solid #ff5339;
+    padding: 0.4rem 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+}
+
+
+.last-footer{
+    margin-bottom: 7rem;
+}
+
+
+
+
+
+
+
+
+

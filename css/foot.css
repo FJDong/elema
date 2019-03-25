@@ -1,0 +1,74 @@
+body,ul,li,p,h1,h2,h3,h4,h5,h6,button,input{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html{
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+/*-------------底部-------------*/
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    background: white;
+}
+.footer-ul{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -0.14rem 0.48rem rgba(0,0,0,.1);
+}
+.footer ul li{
+    width: 4rem;
+    font-size: 1rem-small;
+    height: 2.6rem;
+    line-height: 3rem;
+    color: #8d8d8d;
+    list-style: none;
+    text-align: center;
+    padding:1.7rem 0.2rem 0.2rem 0.2rem;
+    text-align: center;
+}
+.footer ul li:hover{
+    color: #F27233;
+    cursor: pointer;
+}
+.footer-first{
+    background: url(../img/b1.png) no-repeat center 0.5rem;
+    background-size: 1.8rem 1.8rem;
+}
+.footer-find{
+    background: url(../img/b2.png) no-repeat center 0.5rem;
+    background-size: 1.8rem 1.8rem;
+}
+.footer-dan{
+    background: url(../img/b3.png) no-repeat center 0.5rem;
+    background-size: 1.8rem 1.8rem;
+}
+.footer-my{
+    background: url(../img/b5.png) no-repeat center 0.5rem;
+    background-size: 1.8rem 1.8rem;
+}
+.footer-first:hover{
+    background: url(../img/b11.png) no-repeat center 0.5rem;
+    background-size: 1.8rem 1.8rem;
+}
+.footer-find:hover{
+    background: url(../img/b22.png) no-repeat center 0.5rem;
+    background-size: 1.8rem 1.8rem;
+}
+.footer-dan:hover{
+    background: url(../img/b33.png) no-repeat center 0.5rem;
+    background-size: 1.8rem 1.8rem;
+}
+.footer-my:hover{
+    background: url(../img/b55.png) no-repeat center 0.5rem;
+    background-size: 1.8rem 1.8rem;
+}
